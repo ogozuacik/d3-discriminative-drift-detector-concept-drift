@@ -16,7 +16,7 @@ Datasets should be in **csv** format. You can access the datasets used in the pa
 
 https://github.com/ogozuacik/concept-drift-datasets-scikit-multiflow
 
-You have to install scikit-multiflow in addition to commonly used python libraries.(sklearn, pandas, numpy)
+You have to install scikit-multiflow in addition to commonly used python libraries. (sklearn, pandas, numpy, matplotlib)
 
 https://scikit-multiflow.github.io/
 
