@@ -1,4 +1,4 @@
-# d3-discriminative-drift-detector-concept-drift
+# Unsupervised Concept Drift Detection with a Discriminative Classifier (D3)
 
 Ömer Gözüaçık, Alican Büyükçakır, Hamed Bonab, and Fazli Can. 2019. Unsupervised Concept Drift Detection with a Discriminative Classifier. In Proceedings of The 28th ACM International Conference on Information and Knowledge Management, Beijing, China, November 3–7, 2019, (CIKM’2019), 4 pages. [arXiv] [ACM DL] (To be published)
 
