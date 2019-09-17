@@ -16,6 +16,10 @@ Datasets should be in **csv** format. You can access the datasets used in the pa
 
 https://github.com/ogozuacik/concept-drift-datasets-scikit-multiflow
 
+You have to install scikit-multiflow in addition to commonly used python libraries.(sklearn, pandas, numpy)
+
+https://scikit-multiflow.github.io/
+
 **The code will output:** 
 * Final accuracy
 * Total elapsed time (from beginning of the stream to the end)
