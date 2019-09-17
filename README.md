@@ -9,16 +9,14 @@
 
 **Command line instructions:**
 
-python D3.py dataset_name w rho tau (sample: python D3.py elec.csv 100 0.1 0.7)
+* python D3.py dataset_name w rho tau (sample: python D3.py elec.csv 100 0.1 0.7)
 
-You can either put the datasets into the same directory or write dataset directory in place of dataset_name.
+* You can either put the datasets into the same directory or write dataset directory in place of dataset_name.
 Datasets should be in **csv** format. You can access the datasets used in the paper and more from:
+  * https://github.com/ogozuacik/concept-drift-datasets-scikit-multiflow
 
-https://github.com/ogozuacik/concept-drift-datasets-scikit-multiflow
-
-You have to install scikit-multiflow in addition to commonly used python libraries. (sklearn, pandas, numpy, matplotlib)
-
-https://scikit-multiflow.github.io/
+* You have to install scikit-multiflow in addition to commonly used python libraries. (sklearn, pandas, numpy, matplotlib)
+  * https://scikit-multiflow.github.io/
 
 **The code will output:** 
 * Final accuracy
