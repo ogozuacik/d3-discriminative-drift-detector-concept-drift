@@ -4,9 +4,11 @@
 
 ## Implementation of D3 in river package
 
-D3 is now supported in **river** which is a merger between creme and scikit-multiflow. It is one of the most comprehensive python library for doing machine learning on streaming data. Right, now D3 is not included in the package, but you can download and install the development version of the package to access D3.
+D3 is now supported in **river** which is a merger between creme and scikit-multiflow. It is one of the most comprehensive python library for doing machine learning on streaming data. Right now, D3 is not included in the package, but you can download and install the development version of the package to access D3.
 
 For more details on river: https://riverml.xyz/latest/
+
+Forked version of river having D3: https://github.com/ogozuacik/river
 
 **Installing development version of river which includes D3.**
 
