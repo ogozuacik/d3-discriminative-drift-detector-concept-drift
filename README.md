@@ -2,18 +2,20 @@
 
 Ömer Gözüaçık, Alican Büyükçakır, Hamed Bonab, and Fazli Can. 2019. Unsupervised Concept Drift Detection with a Discriminative Classifier. In Proceedings of The 28th ACM International Conference on Information and Knowledge Management, Beijing, China, November 3–7, 2019, (CIKM’2019), 4 pages. [ACM DL](https://dl.acm.org/citation.cfm?id=3357384.3358144)
 
-**Implementation of D3 in river package**
+## Implementation of D3 in river package
+
 D3 is now supported in **river** which is a merger between creme and scikit-multiflow. It is one of the most comprehensive python library for doing machine learning on streaming data. Right, now D3 is not included in the package, but you can download and install the development version of the package to access D3.
 
 For more details on river: https://riverml.xyz/latest/
 
 **Installing development version of river which includes D3.**
+
 ```
 pip install git+https://github.com/ogozuacik/river --upgrade
 ```
 
 **Sample run**
-```
+```python
 from river import synth
 from river.drift import D3
 d3 = D3(seed=12345)
@@ -29,7 +31,8 @@ for x, y in data_stream.take(250):
 ```
 
 
-**Legacy Code**
+## Legacy Code
+
 You can still download the old code in this repository and follow the instructions given below.
 
 **Parameters:**
