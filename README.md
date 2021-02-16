@@ -1,6 +1,36 @@
 # Unsupervised Concept Drift Detection with a Discriminative Classifier (D3)
 
-Ömer Gözüaçık, Alican Büyükçakır, Hamed Bonab, and Fazli Can. 2019. Unsupervised Concept Drift Detection with a Discriminative Classifier. In Proceedings of The 28th ACM International Conference on Information and Knowledge Management, Beijing, China, November 3–7, 2019, (CIKM’2019), 4 pages. [ACM DL](https://dl.acm.org/citation.cfm?id=3357384.3358144) 
+Ömer Gözüaçık, Alican Büyükçakır, Hamed Bonab, and Fazli Can. 2019. Unsupervised Concept Drift Detection with a Discriminative Classifier. In Proceedings of The 28th ACM International Conference on Information and Knowledge Management, Beijing, China, November 3–7, 2019, (CIKM’2019), 4 pages. [ACM DL](https://dl.acm.org/citation.cfm?id=3357384.3358144)
+
+**Implementation of D3 in river package**
+D3 is now supported in **river** which is a merger between creme and scikit-multiflow. It is one of the most comprehensive python library for doing machine learning on streaming data. Right, now D3 is not included in the package, but you can download and install the development version of the package to access D3.
+
+For more details on river: https://riverml.xyz/latest/
+
+**Installing development version of river which includes D3.**
+```
+pip install git+https://github.com/ogozuacik/river --upgrade
+```
+
+**Sample run**
+```
+from river import synth
+from river.drift import D3
+d3 = D3(seed=12345)
+# Simulate a data stream
+data_stream = synth.Hyperplane(seed=42, n_features=10, mag_change=0.5)
+# Update drift detector and verify if change is detected
+i = 0
+for x, y in data_stream.take(250):
+   in_drift, in_warning = d3.update(x)
+   if in_drift:
+      print(f"Change detected at index {i}")
+   i += 1
+```
+
+
+**Legacy Code**
+You can still download the old code in this repository and follow the instructions given below.
 
 **Parameters:**
 * w: window size
