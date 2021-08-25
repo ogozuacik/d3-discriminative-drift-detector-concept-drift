@@ -20,7 +20,7 @@ pip install git+https://github.com/ogozuacik/river --upgrade
 ```python
 from river import synth
 from river.drift import D3
-d3 = D3(seed=12345)
+d3 = D3()
 # Simulate a data stream
 data_stream = synth.Hyperplane(seed=42, n_features=10, mag_change=0.5)
 # Update drift detector and verify if change is detected
